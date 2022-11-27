@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "flask_credentials"
 version = "0.1.0"
-description = open("README.md").read().strip()
+description = ""
 readme = "README.md"
 authors = ["zenteach <connect@ngetahun.me>"]
 license = "MIT"
@@ -42,6 +42,7 @@ rich = "^10.14.0"
 [tool.poetry.dev-dependencies]
 bandit = "^1.7.1"
 black = {version = "^21.10b0", allow-prereleases = true}
+click = "^8.0.0"
 darglint = "^1.8.1"
 isort = {extras = ["colors"], version = "^5.10.1"}
 mypy = "^0.910"

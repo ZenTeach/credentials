@@ -1,4 +1,4 @@
-# Docker for flask_credentials
+# Docker for credentials
 
 ## Installation
 
@@ -15,7 +15,7 @@ make docker-build VERSION=latest
 ```
 
 You may provide name and version for the image.
-Default name is `IMAGE := flask_credentials`.
+Default name is `IMAGE := credentials`.
 Default version is `VERSION := latest`.
 
 ```bash
@@ -27,7 +27,7 @@ make docker-build IMAGE=some_name VERSION=0.1.0
 ```bash
 docker run -it --rm \
    -v $(pwd):/workspace \
-   flask_credentials bash
+   credentials bash
 ```
 
 ## How to clean up

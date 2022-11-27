@@ -7,8 +7,8 @@ from random import choice
 import typer
 from rich.console import Console
 
-from flask_credentials import version
-from flask_credentials.example import hello
+from credentials import version
+from credentials.example import hello
 
 
 class Color(str, Enum):
@@ -21,8 +21,8 @@ class Color(str, Enum):
 
 
 app = typer.Typer(
-    name="flask_credentials",
-    help="Awesome `flask_credentials` is a Python cli/package created with https://github.com/TezRomacH/python-package-template",
+    name="credentials",
+    help="Awesome `credentials` is a Python cli/package created with https://github.com/TezRomacH/python-package-template",
     add_completion=False,
 )
 console = Console()
@@ -31,7 +31,7 @@ console = Console()
 def version_callback(print_version: bool) -> None:
     """Print the version of the package."""
     if print_version:
-        console.print(f"[yellow]flask_credentials[/] version: [bold blue]{version}[/]")
+        console.print(f"[yellow]credentials[/] version: [bold blue]{version}[/]")
         raise typer.Exit()
 
 
@@ -52,7 +52,7 @@ def main(
         "--version",
         callback=version_callback,
         is_eager=True,
-        help="Prints the version of the flask_credentials package.",
+        help="Prints the version of the credentials package.",
     ),
 ) -> None:
     """Print a greeting with a giving name."""

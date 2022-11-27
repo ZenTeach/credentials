@@ -1,19 +1,19 @@
-# flask_credentials
+# credentials
 
 <div align="center">
 
-[![Build status](https://github.com/zenteach/flask_credentials/workflows/build/badge.svg?branch=master&event=push)](https://github.com/zenteach/flask_credentials/actions?query=workflow%3Abuild)
-[![Python Version](https://img.shields.io/pypi/pyversions/flask_credentials.svg)](https://pypi.org/project/flask_credentials/)
-[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](https://github.com/zenteach/flask_credentials/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot)
+[![Build status](https://github.com/zenteach/credentials/workflows/build/badge.svg?branch=master&event=push)](https://github.com/zenteach/credentials/actions?query=workflow%3Abuild)
+[![Python Version](https://img.shields.io/pypi/pyversions/credentials.svg)](https://pypi.org/project/credentials/)
+[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](https://github.com/zenteach/credentials/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Security: bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)
-[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/zenteach/flask_credentials/blob/master/.pre-commit-config.yaml)
-[![Semantic Versions](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--versions-e10079.svg)](https://github.com/zenteach/flask_credentials/releases)
-[![License](https://img.shields.io/github/license/zenteach/flask_credentials)](https://github.com/zenteach/flask_credentials/blob/master/LICENSE)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/zenteach/credentials/blob/master/.pre-commit-config.yaml)
+[![Semantic Versions](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--versions-e10079.svg)](https://github.com/zenteach/credentials/releases)
+[![License](https://img.shields.io/github/license/zenteach/credentials)](https://github.com/zenteach/credentials/blob/master/LICENSE)
 ![Coverage Report](assets/images/coverage.svg)
 
-Awesome `flask_credentials` is a Python cli/package created with https://github.com/TezRomacH/python-package-template
+Awesome `credentials` is a Python cli/package created with https://github.com/TezRomacH/python-package-template
 
 </div>
 
@@ -24,7 +24,7 @@ Awesome `flask_credentials` is a Python cli/package created with https://github.
 1. Initialize `git` inside your repo:
 
 ```bash
-cd flask_credentials && git init
+cd credentials && git init
 ```
 
 2. If you don't have `Poetry` installed run:
@@ -52,7 +52,7 @@ make codestyle
 git add .
 git commit -m ":tada: Initial commit"
 git branch -M main
-git remote add origin https://github.com/zenteach/flask_credentials.git
+git remote add origin https://github.com/zenteach/credentials.git
 git push -u origin main
 ```
 
@@ -115,56 +115,56 @@ Articles:
 ### Development features
 
 - Supports for `Python 3.8` and higher.
-- [`Poetry`](https://python-poetry.org/) as the dependencies manager. See configuration in [`pyproject.toml`](https://github.com/zenteach/flask_credentials/blob/master/pyproject.toml) and [`setup.cfg`](https://github.com/zenteach/flask_credentials/blob/master/setup.cfg).
+- [`Poetry`](https://python-poetry.org/) as the dependencies manager. See configuration in [`pyproject.toml`](https://github.com/zenteach/credentials/blob/master/pyproject.toml) and [`setup.cfg`](https://github.com/zenteach/credentials/blob/master/setup.cfg).
 - Automatic codestyle with [`black`](https://github.com/psf/black), [`isort`](https://github.com/timothycrosley/isort) and [`pyupgrade`](https://github.com/asottile/pyupgrade).
 - Ready-to-use [`pre-commit`](https://pre-commit.com/) hooks with code-formatting.
 - Type checks with [`mypy`](https://mypy.readthedocs.io); docstring checks with [`darglint`](https://github.com/terrencepreilly/darglint); security checks with [`safety`](https://github.com/pyupio/safety) and [`bandit`](https://github.com/PyCQA/bandit)
 - Testing with [`pytest`](https://docs.pytest.org/en/latest/).
-- Ready-to-use [`.editorconfig`](https://github.com/zenteach/flask_credentials/blob/master/.editorconfig), [`.dockerignore`](https://github.com/zenteach/flask_credentials/blob/master/.dockerignore), and [`.gitignore`](https://github.com/zenteach/flask_credentials/blob/master/.gitignore). You don't have to worry about those things.
+- Ready-to-use [`.editorconfig`](https://github.com/zenteach/credentials/blob/master/.editorconfig), [`.dockerignore`](https://github.com/zenteach/credentials/blob/master/.dockerignore), and [`.gitignore`](https://github.com/zenteach/credentials/blob/master/.gitignore). You don't have to worry about those things.
 
 ### Deployment features
 
 - `GitHub` integration: issue and pr templates.
-- `Github Actions` with predefined [build workflow](https://github.com/zenteach/flask_credentials/blob/master/.github/workflows/build.yml) as the default CI/CD.
-- Everything is already set up for security checks, codestyle checks, code formatting, testing, linting, docker builds, etc with [`Makefile`](https://github.com/zenteach/flask_credentials/blob/master/Makefile#L89). More details in [makefile-usage](#makefile-usage).
-- [Dockerfile](https://github.com/zenteach/flask_credentials/blob/master/docker/Dockerfile) for your package.
+- `Github Actions` with predefined [build workflow](https://github.com/zenteach/credentials/blob/master/.github/workflows/build.yml) as the default CI/CD.
+- Everything is already set up for security checks, codestyle checks, code formatting, testing, linting, docker builds, etc with [`Makefile`](https://github.com/zenteach/credentials/blob/master/Makefile#L89). More details in [makefile-usage](#makefile-usage).
+- [Dockerfile](https://github.com/zenteach/credentials/blob/master/docker/Dockerfile) for your package.
 - Always up-to-date dependencies with [`@dependabot`](https://dependabot.com/). You will only [enable it](https://docs.github.com/en/github/administering-a-repository/enabling-and-disabling-version-updates#enabling-github-dependabot-version-updates).
-- Automatic drafts of new releases with [`Release Drafter`](https://github.com/marketplace/actions/release-drafter). You may see the list of labels in [`release-drafter.yml`](https://github.com/zenteach/flask_credentials/blob/master/.github/release-drafter.yml). Works perfectly with [Semantic Versions](https://semver.org/) specification.
+- Automatic drafts of new releases with [`Release Drafter`](https://github.com/marketplace/actions/release-drafter). You may see the list of labels in [`release-drafter.yml`](https://github.com/zenteach/credentials/blob/master/.github/release-drafter.yml). Works perfectly with [Semantic Versions](https://semver.org/) specification.
 
 ### Open source community features
 
-- Ready-to-use [Pull Requests templates](https://github.com/zenteach/flask_credentials/blob/master/.github/PULL_REQUEST_TEMPLATE.md) and several [Issue templates](https://github.com/zenteach/flask_credentials/tree/master/.github/ISSUE_TEMPLATE).
+- Ready-to-use [Pull Requests templates](https://github.com/zenteach/credentials/blob/master/.github/PULL_REQUEST_TEMPLATE.md) and several [Issue templates](https://github.com/zenteach/credentials/tree/master/.github/ISSUE_TEMPLATE).
 - Files such as: `LICENSE`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md` are generated automatically.
-- [`Stale bot`](https://github.com/apps/stale) that closes abandoned issues after a period of inactivity. (You will only [need to setup free plan](https://github.com/marketplace/stale)). Configuration is [here](https://github.com/zenteach/flask_credentials/blob/master/.github/.stale.yml).
+- [`Stale bot`](https://github.com/apps/stale) that closes abandoned issues after a period of inactivity. (You will only [need to setup free plan](https://github.com/marketplace/stale)). Configuration is [here](https://github.com/zenteach/credentials/blob/master/.github/.stale.yml).
 - [Semantic Versions](https://semver.org/) specification with [`Release Drafter`](https://github.com/marketplace/actions/release-drafter).
 
 ## Installation
 
 ```bash
-pip install -U flask_credentials
+pip install -U credentials
 ```
 
 or install with `Poetry`
 
 ```bash
-poetry add flask_credentials
+poetry add credentials
 ```
 
 Then you can run
 
 ```bash
-flask_credentials --help
+credentials --help
 ```
 
 or with `Poetry`:
 
 ```bash
-poetry run flask_credentials --help
+poetry run credentials --help
 ```
 
 ### Makefile usage
 
-[`Makefile`](https://github.com/zenteach/flask_credentials/blob/master/Makefile) contains a lot of functions for faster development.
+[`Makefile`](https://github.com/zenteach/credentials/blob/master/Makefile) contains a lot of functions for faster development.
 
 <details>
 <summary>1. Download and remove Poetry</summary>
@@ -316,7 +316,7 @@ Remove docker image with
 make docker-remove
 ```
 
-More information [about docker](https://github.com/zenteach/flask_credentials/tree/master/docker).
+More information [about docker](https://github.com/zenteach/credentials/tree/master/docker).
 
 </p>
 </details>
@@ -359,7 +359,7 @@ make cleanup
 
 ## 📈 Releases
 
-You can see the list of available releases on the [GitHub Releases](https://github.com/zenteach/flask_credentials/releases) page.
+You can see the list of available releases on the [GitHub Releases](https://github.com/zenteach/credentials/releases) page.
 
 We follow [Semantic Versions](https://semver.org/) specification.
 
@@ -376,26 +376,26 @@ We use [`Release Drafter`](https://github.com/marketplace/actions/release-drafte
 |            `documentation`            |    📝 Documentation     |
 |            `dependencies`             | ⬆️ Dependencies updates |
 
-You can update it in [`release-drafter.yml`](https://github.com/zenteach/flask_credentials/blob/master/.github/release-drafter.yml).
+You can update it in [`release-drafter.yml`](https://github.com/zenteach/credentials/blob/master/.github/release-drafter.yml).
 
 GitHub creates the `bug`, `enhancement`, and `documentation` labels for you. Dependabot creates the `dependencies` label. Create the remaining labels on the Issues tab of your GitHub repository, when you need them.
 
 ## 🛡 License
 
-[![License](https://img.shields.io/github/license/zenteach/flask_credentials)](https://github.com/zenteach/flask_credentials/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/zenteach/credentials)](https://github.com/zenteach/credentials/blob/master/LICENSE)
 
-This project is licensed under the terms of the `MIT` license. See [LICENSE](https://github.com/zenteach/flask_credentials/blob/master/LICENSE) for more details.
+This project is licensed under the terms of the `MIT` license. See [LICENSE](https://github.com/zenteach/credentials/blob/master/LICENSE) for more details.
 
 ## 📃 Citation
 
 ```bibtex
-@misc{flask_credentials,
+@misc{credentials,
   author = {zenteach},
-  title = {Awesome `flask_credentials` is a Python cli/package created with https://github.com/TezRomacH/python-package-template},
+  title = {Awesome `credentials` is a Python cli/package created with https://github.com/TezRomacH/python-package-template},
   year = {2022},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/zenteach/flask_credentials}}
+  howpublished = {\url{https://github.com/zenteach/credentials}}
 }
 ```
 

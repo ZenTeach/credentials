@@ -4,14 +4,14 @@ requires = ["poetry_core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "flask_credentials"
+name = "credentials"
 version = "0.1.0"
 description = ""
 readme = "README.md"
 authors = ["zenteach <connect@ngetahun.me>"]
 license = "MIT"
-repository = "https://github.com/zenteach/flask_credentials"
-homepage = "https://github.com/zenteach/flask_credentials"
+repository = "https://github.com/zenteach/credentials"
+homepage = "https://github.com/zenteach/credentials"
 
 # Keywords description https://python-poetry.org/docs/pyproject/#keywords
 keywords = []  #! Update me
@@ -31,15 +31,17 @@ classifiers = [  #! Update me
 
 [tool.poetry.scripts]
 # Entry points for the package https://python-poetry.org/docs/pyproject/#scripts
-"flask_credentials" = "flask_credentials.__main__:app"
+"credentials" = "credentials.__main__:app"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 typer = {extras = ["all"], version = "^0.4.0"}
 rich = "^10.14.0"
+asyncio = "^3.4.0"
+asyncio_extras = ""
 
-[tool.poetry.dev-dependencies]
+[tool.qoetry.dev-dependencies]
 bandit = "^1.7.1"
 black = {version = "^21.10b0", allow-prereleases = true}
 click = "^8.0.0"
@@ -138,7 +140,7 @@ addopts = [
 source = ["tests"]
 
 [coverage.paths]
-source = "flask_credentials"
+source = "credentials"
 
 [coverage.run]
 branch = true

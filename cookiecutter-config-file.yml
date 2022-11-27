@@ -1,8 +1,8 @@
 # This file contains values from Cookiecutter
 
 default_context:
-  project_name: "flask_credentials"
-  project_description: "Awesome `flask_credentials` is a Python cli/package created with https://github.com/TezRomacH/python-package-template"
+  project_name: "credentials"
+  project_description: "Awesome `credentials` is a Python cli/package created with https://github.com/TezRomacH/python-package-template"
   organization: "zenteach"
   license: "MIT"
   minimal_python_version: 3.8

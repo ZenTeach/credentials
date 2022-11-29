@@ -1,4 +1,4 @@
-from typing import IO, Callable, Generator, Optional
+from typing import Generator, Tuple
 
 import os
 from io import BytesIO
@@ -9,6 +9,9 @@ from pathlib import Path
 
 @contextmanager
 def working_directory(path: Path) -> Generator[None, None, None]:
+    """
+        working_directory
+    """
     prev_cwd = os.getcwd()
     os.chdir(path)
     try:
@@ -16,20 +19,19 @@ def working_directory(path: Path) -> Generator[None, None, None]:
     finally:
         os.chdir(prev_cwd)
 
-class temp_directory(ContextDecorator):
+class SecureTempFile(ContextDecorator):
+    """
+        secure_temp_file
+    """
     resolved_temp_directory = ""
-    temp_path = None
 
-    def __enter__(self, file_path: Path, file_type: Optional[str] = "yml") -> Generator[Tuple[BytesIO, str], None, None]:
-        path_name = file_path.name
-        self.resolved_temp_directory = tempfile.mkstemp(suffix=f".{file_type}", prefix=f"{path_name}")
-        with open(self.resolved_temp_directory[1]) as fp:
+    def __enter__(self) -> Generator[Tuple[BytesIO, str], None, None]:
+        self.resolved_temp_directory = tempfile.mkstemp(suffix='.yml')
+        with open(self.resolved_temp_directory[1], encoding='utf-8') as fp:
             yield fp
 
-    def __exit__(self):
+    def __exit__(self, *exc):
         try:
-            fp.close()
             os.rmdir(self.resolved_temp_directory[1])
-
-        except e:
-            raise e
+        except:
+            raise
